@@ -127,7 +127,7 @@ header .mobile-nav .close-nav-btn {
     width: 60%;
     margin: 6px auto;
     color: var(--grey);
-    font-size: 25px;
+    font-size: 22px;
 }
 .hero .buttons {
     margin-top: 24px;
@@ -141,7 +141,7 @@ header .mobile-nav .close-nav-btn {
     border: 2px solid var(--primary);
     color: var(--white);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     border-radius: 5px;
     background: var(--primary);
     transition: all .3s ease;

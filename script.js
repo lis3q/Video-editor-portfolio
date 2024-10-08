@@ -64,29 +64,6 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-
-// EmailJS
-emailjs.init("RoyLX7c-NdwFjq2hH");
-document.querySelector('#contact .form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    emailjs.sendForm('service_rh45oth', 'template_wi887pn', '#contact .form').then(
-        (response) => {
-            console.log('SUCCESS!', response.status, response.text);
-            document.querySelector(".username").value = "";
-            document.querySelector(".useremail").value = "";
-            document.querySelector(".usermessage").value = "";
-
-            document.querySelector(".submit-btn").value = "Message sent. Thank you!"
-            document.querySelector(".submit-btn").style.background = "var(--primary)";
-            document.querySelector(".submit-btn").style.color = "var(--white)";
-        },
-        (error) => {
-            console.log('FAILED...', error);
-        },
-    );
-});
-
 // Playing video after click
 const videos = document.querySelectorAll('.skill-video');
 
