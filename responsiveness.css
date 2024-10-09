@@ -20,6 +20,10 @@
 /* Phones */
 @media screen and (max-width: 768px) {
 
+    html {
+        scroll-padding-top: 40px;
+    }
+
     /* Section */
     section {
         padding: 40px 20px;
@@ -71,18 +75,21 @@
 
     /* Hero */
     .hero {
-        margin-top: 40%;
+        margin-top: 48%;
     }
     .hero h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
     .hero h1 {
-        margin-top: 16px;
-        font-size: 42px;
+        margin-top: 8px;
+        font-size: 52px;
     }
     .hero p {
         width: 100%;
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .hero .buttons {
+        flex-direction: column;
     }
     .hero .buttons a {
         font-size: 14px;
