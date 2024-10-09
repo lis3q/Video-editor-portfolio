@@ -71,7 +71,7 @@ header .logo {
     color: var(--white);
 }
 header .navbar {
-    margin-right: 60px;
+    margin-right: 120px;
     display: flex;
     align-items: center;
     gap: 26px;
