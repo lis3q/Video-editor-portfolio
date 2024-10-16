@@ -25,25 +25,6 @@ links.forEach(link => {
     })
 })
 
-// ScrollReveal
-ScrollReveal().reveal('.hero h2, .hero h1, #skills video, .row, input, textarea, .section-heading', {
-    delay: 300,
-    duration: 700,
-    origin: 'top',
-    distance: '60px',
-    interval: 200,
-    easing: 'ease-in-out'
-});
-ScrollReveal().reveal('.hero p, .hero .buttons, #skills video, #works .container', {
-    delay: 300,
-    duration: 700,
-    origin: 'bottom',
-    distance: '60px',
-    interval: 200,
-    easing: 'ease-in-out'
-});
-
-
 // Playing video after click
 const videos = document.querySelectorAll('.skill-video');
 
