@@ -1,5 +1,3 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-
 // Mobile navbar
 const openNavBtn = document.querySelector(".open-nav-btn");
 const closeNavBtn = document.querySelector(".close-nav-btn");
@@ -45,24 +43,6 @@ ScrollReveal().reveal('.hero p, .hero .buttons, #skills video, #works .container
     easing: 'ease-in-out'
 });
 
-
-// SwiperJs
-const swiper = new Swiper('.swiper', {
-  speed: 500,
-  direction: 'horizontal',
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination-unique',
-    clickable: true
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next-unique',
-    prevEl: '.swiper-button-prev-unique',
-  },
-
-});
 
 // Playing video after click
 const videos = document.querySelectorAll('.skill-video');

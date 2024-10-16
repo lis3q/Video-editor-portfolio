@@ -15,21 +15,27 @@
     .hero .buttons a {
         font-size: 15px;
     }
+
+    #about .row {
+        width: 330px;
+        height: 440px;
+    }
 }
 
 /* Phones */
 @media screen and (max-width: 768px) {
-
-    html {
-        scroll-padding-top: 40px;
-    }
 
     /* Section */
     section {
         padding: 40px 20px;
     }
     .section-heading {
-        font-size: 22px;
+        font-size: 26px;
+    }
+
+    /* Back to home btn */
+    .back-home-btn {
+        display: none;
     }
 
     /* Header */
@@ -40,10 +46,11 @@
         left: 0;
         top: 0;
         padding: 10px 20px;
-        background: var(--blackGradient1);
+        background: #141618;
+        box-shadow: 0 4px 12px 0 #00000017;
     }
     header .logo {
-        font-size: 24px;
+        font-size: 22px;
     }
     header .icons {
         display: none;
@@ -56,7 +63,7 @@
     }
     header nav {
         position: absolute;
-        top: 55px;
+        top: 53px;
         left: 0;
         padding: 30px 0;
         flex-direction: column;
@@ -64,7 +71,7 @@
         width: 100%;
         height: max-content;
         transition: all .3s ease-in-out;
-        background: var(--blackGradient1);
+        background: #252b2e;
         transform: translateX(-200%);
         opacity: 0.3;
     }
@@ -75,21 +82,18 @@
 
     /* Hero */
     .hero {
-        margin-top: 48%;
+        margin-top: 40%;
     }
     .hero h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
     .hero h1 {
-        margin-top: 8px;
-        font-size: 52px;
+        margin-top: 16px;
+        font-size: 42px;
     }
     .hero p {
         width: 100%;
-        font-size: 18px;
-    }
-    .hero .buttons {
-        flex-direction: column;
+        font-size: 16px;
     }
     .hero .buttons a {
         font-size: 14px;
@@ -100,7 +104,7 @@
         flex-direction: column;
     }
     #about .row {
-        width: 100%;
+        width: 90%;
         text-align: center;
         height: max-content;
     }
@@ -108,13 +112,13 @@
         flex-direction: column-reverse;
     }
     #about .row .heading i {
-        font-size: 26px;
+        font-size: 34px;
     }
     #about .row .heading h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
     #about .row p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* Skills */
@@ -126,34 +130,16 @@
     }
 
     /* Works */
-    #works .swiper {
+    #works .videos-container iframe {
         width: 100%;
-        height: 300px;
-        margin: 60px auto 0 auto;
+        height: 200px;
     }
-    #works .swiper-slide video {
-        object-fit: contain;
-    }
-    #works .swiperBtn {
-        top: 95%;
-        right: 48%;
-        height: 36px !important;
-        width: 36px !important;
-    }
-    .swiperBtn i {
-        font-size: 18px !important;
-    }
-    .swiper-button-prev-unique {
-        left: 48%;
-    }
-    #works .swiper-pagination-unique {
-        display: none;
+    #works .reels-container iframe {
+        height: 400px;
+        width: 100%;
     }
 
     /* Contact */
-    #contact {
-        padding: 120px 20px 40px 20px;
-    }
     #contact .form input,
     #contact .form textarea {
         height: 44px;
