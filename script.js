@@ -37,3 +37,16 @@ videos.forEach(video => {
         }
     });
 });
+
+// Back to home button
+window.addEventListener('scroll', function() {
+    const backToTopBtn = document.querySelector('.back-home-btn');
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+  
+    if (scrollPosition > windowHeight) {
+      backToTopBtn.classList.add('active');
+    } else {
+      backToTopBtn.classList.remove('active');
+    }
+  });
